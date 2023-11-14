@@ -6,7 +6,7 @@ mercadopago.configure({
   access_token: 'TEST-578899115377464-060216-71ba4d8f00750ea14dccb4e2fd1d0cb6-1389116251',
 });
 const corsOptions = {
-  origin: 'https://encanto370accesorios.vercel.app',
+  origin: 'http://localhost:4200',
   optionsSuccessStatus: 200 // algunas versiones de IE11 y Safari pueden requerir esto
 };
 
@@ -25,8 +25,8 @@ app.post('/crear-preferencia', async (req, res) => {
       },
     ],
     back_urls: {
-      success: 'https://encanto370accesorios.vercel.app/pago-exitoso',
-      failure: 'https://encanto370accesorios.vercel.app/pago-fallido',
+      success: 'http://localhost:4200/pago-exitoso',
+      failure: 'http://localhost:4200/pago-fallido',
       pending: '/pago-pendiente',
     },
     auto_return: 'approved',
