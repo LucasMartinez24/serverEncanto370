@@ -3,7 +3,7 @@ const mercadopago = require('mercadopago');
 const cors = require('cors');
 // Configurar las credenciales de Mercado Pago
 mercadopago.configure({
-  access_token: 'APP_USR-578899115377464-060216-c5bac25c48e6ffa5dcc9b2d52510fe36-1389116251',
+  access_token: 'TEST-578899115377464-060216-71ba4d8f00750ea14dccb4e2fd1d0cb6-1389116251',
 });
 const corsOptions = {
   origin: 'https://encanto370accesorios.vercel.app',
