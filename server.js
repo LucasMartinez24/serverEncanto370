@@ -3,7 +3,8 @@ const mercadopago = require('mercadopago');
 const cors = require('cors');
 // Configurar las credenciales de Mercado Pago
 mercadopago.configure({
-  access_token: 'TEST-578899115377464-060216-71ba4d8f00750ea14dccb4e2fd1d0cb6-1389116251',
+  access_token:
+    "APP_USR-3871730014452532-031523-a51fef4b6ec4244e836ff5225b6c734d-1896999924",
 });
 const corsOptions = {
   origin: 'http://localhost:4200',
